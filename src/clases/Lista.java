@@ -12,10 +12,7 @@ public class Lista {
     }
 
     public boolean esVacia() {
-        if (this.primero == null) {
-            return true;
-        }
-        return false;
+        return this.primero == null;
     }
 
     public void insertarAlInicio(int x) {
@@ -45,7 +42,6 @@ public class Lista {
             System.out.println("Valor = " + nodoAux.getDato());
             nodoAux = nodoAux.getSiguiente();
         }
-        return;
     }
 
     public int cantidad() {
@@ -107,7 +103,6 @@ public class Lista {
             i++;
             nodoAux = nodoAux.getSiguiente();
         }
-        return;
     }
     //Eliminar el nodo de la posición posicion
     public int dameValorEnPosicion(int posicion) {
@@ -138,7 +133,6 @@ public class Lista {
             i++;
         }
 
-        return;
     }
     //Modificar el contenido del nodo de la posición posicion
     public void insertarEnPosicion(int valor, int posicion) {
@@ -155,7 +149,6 @@ public class Lista {
             i++;
             nodoAux = nodoAux.getSiguiente();
         }
-        return;
     }
     //Inserta un nodo en la posición posicion con valor valor
 
@@ -171,6 +164,5 @@ public class Lista {
         Nodo nodoAux = Lista.getLastNode(listaDos);
         nodoAux.setSiguiente(listaUno.primero);
 
-        return;
     }
 }
