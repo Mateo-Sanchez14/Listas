@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+    private static int it = 0;
+    private static int it2 = 0;
 
     public static void main(String[] args) {
+
 //        Lista lista = Lista.crearLista();
 //
 //        lista.insertarAlInicio(1);
@@ -128,6 +131,7 @@ public class Main {
     }
 
     public static int analizarVec(int[] Vec, int N) {
+        it2++;
         if (N <= 0) {
             return 0;
         }
@@ -139,6 +143,7 @@ public class Main {
         }
     }
     public static int analizarVec(int[] Vec, int left, int right) {
+        it++;
         if (left == right) {
             if (Vec[left] % 2 == 0)
                 return 1;
